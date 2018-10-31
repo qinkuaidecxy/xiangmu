@@ -1,0 +1,526 @@
+*{
+	margin: 0;padding: 0;
+}
+html{
+	font-size:20px;
+
+}
+@media screen and (max-width: 1200px) {html{font-size:15px;}}
+@media screen and (max-width: 1000px) {html{font-size:10px;}}
+@media screen and (max-width: 600px) {html{font-size:5px;}}
+/*@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    /*[class*="col-"] {
+        width: 100%;
+    }
+}
+/* For desktop: */
+/*.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}*/
+
+.kongbai{
+	height: 5rem;
+	width: 100%;
+}					/*==导航栏==*/
+.daohanlang{
+	height: 5rem;
+	width: 100%;
+	position: fixed;
+	overflow: hidden;
+	z-index: 5;
+	top: 0;
+	border-bottom-style: solid;
+	border-color: blue;
+	border-width: 0.15rem;
+	background-color: #fff;
+}
+#shouye{
+	color: red;
+}
+.img1{
+	display: inline-block;
+	margin:1rem;
+	width: 8rem;
+	height: auto;
+
+}
+.daohananniu{
+	list-style-type: none;
+	font-size: 1rem;
+	margin-top: 1rem;
+	height: 4rem;
+	position:absolute;
+	display: inline-flex;
+}
+.daohanlang li{
+	display: inline-block;
+	flex-start;
+	margin: 1rem;
+}
+.daohanlang li a{
+	text-decoration: none;
+	color: black;
+}
+.li_on{
+	color: red;
+}
+					/*==轮播图==*/
+ul li {
+    list-style: none;
+}
+#scrollPics img{
+	width:100%;
+	height:40%;
+	background-size:cover;
+}
+#scrollPics {
+    height:40%;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    margin-top: 0;
+}
+.num {
+    position: absolute;
+    right: 0.25rem;
+    bottom: 0.25rem;
+    right: 40%;
+    border-radius:1.25rem;
+}
+
+#scrollPics .num li {
+	border-radius:50%;
+    float: left;
+    color: #FF7300;
+    text-align: center;
+    line-height: 0.8rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0.5rem 1rem;
+    border: 0.05rem solid #FF7300;
+    background-color: #fff;
+}
+
+#scrollPics .num li.on {
+		border-radius:50%;
+        color: #fff;
+        line-height: 1.05rem;
+        width: 1.05rem;
+        height: 1.05rem;
+        font-size: 0.8rem;
+        margin: 0.5 1px;
+        border: 0;
+        background-color: #FF7300;
+        font-weight: bold;
+}					/*==右侧选项卡==*/
+.xuan{
+	position: fixed;
+	z-index: 5;
+	right: 0.5rem;
+	top: 40%;
+}
+.xuan img{
+	width: 2.5rem;
+	height: 2.5rem;
+}
+.dianhua2{
+	position:absolute;
+	display: none;
+	font-size: 0.8rem;
+	width: 8.6rem;
+	bottom: 0.4rem;
+	background-color: #fff;
+	right: 2.5rem;
+}
+.dianhua2 img{
+	float: right;
+	width: 2rem;
+	height: 2rem;
+}
+.dianhua2 h3{
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	color: blue;
+	float: right;
+}
+.erweima2{
+	display: none;
+	width: 8rem;
+	right: 2.5rem;
+	font-size: 0.8rem;
+	top: 0;
+	position: absolute;
+}
+.erweima2 img{
+	float: right;
+	width: 8rem;
+	height: 8rem;
+}
+.erweima-font{
+	text-align: center;
+	background-color: #888;
+}
+#weixin-x,#dianhua-x,#zixun-x{
+display: none;	
+}
+					
+					/*==滑动翻页==*/
+.zhuanjia{
+	width: 60rem;
+	height: 29rem;
+	margin-top: 2.5rem;
+	background-color:#b0e0e6;
+	margin: auto;
+	position: relative;
+}
+.swiper-container{
+	margin-top:2.5rem;
+	width: 60rem;
+	height: 30rem;
+}
+.swiper-slide{
+	display: inline;
+}
+.top_img{
+	background-color: white;
+	margin-top: 6rem;
+	float: left;
+	width: 60rem;
+	height: 23rem;
+}
+
+.timg{
+	width: 23rem;
+	height: 23rem;
+	display: inline-block;
+}
+.btnimg{
+	margin-left: -20px;
+	margin-bottom: -5px;
+}
+.top_img p{
+	font-size: 0.75rem;
+}
+.top_img label{
+	font-size:1.25rem;
+	position: absolute;
+	margin-top: 2.5rem;
+	right: 25rem;
+	float: right;
+}
+.topp{
+	float: right;
+	margin-top: 6rem;
+	margin-right: 6rem;
+}
+.topp1{
+	opacity: 0.4;
+	float: right;
+	font-size: 0.75rem;
+	margin-top: -5rem;
+	padding-top: 1rem;
+	border-width: 1px;
+	border-top-style:solid; 
+}
+
+
+					/*==滑动翻页==*/
+					/*==过度带==*/
+.guodu{
+	position: relative;
+	height: 7.5rem;
+	font-size: 1rem;
+}
+.guodu span{
+	background-color:#4169e1;
+	font-size:1.25rem;
+	text-align: center;
+	width: 25rem;
+	margin: 0.25rem;
+	padding: 0.4rem 0.75rem 0.4rem 0.75rem;
+	height: 2.5rem;
+	color: #fff;
+}
+.guodu-label{
+	position: absolute;
+	width:28rem;
+	height: 2.5rem;
+	display: block;
+	overflow: hidden;
+	top: 0; left: 0; bottom: 0; right: 0;
+	margin: auto;
+	padding-top: 0.25rem;
+}					/*==百科容器==*/
+.ban{
+	width: 60rem;
+	height: 33rem;
+	background-color:#b0e0e6;
+	margin: auto;
+	position: relative;
+}					/*==目录头部==*/
+.toubu{
+	position: absolute;
+	width: 21rem;
+	height: 5rem;
+	left:22rem;
+}
+.toubu img{
+	width: 5.5rem;
+	height: auto;
+}
+.title1{
+	font-size: 1.25rem;
+}
+.title2{
+	font-size: 1rem;
+	margin-left: 3.5rem;
+}
+.toubu-neiron{
+	position: absolute;
+	top: 1.5rem;
+}					/*==内容排版==*/
+.ban{
+	font-size: 0.8rem;
+}
+.ban-neiron1,.ban-neiron4{
+	width: 16rem;
+	height: 24rem;
+	background-color: #fff;
+	position: absolute;
+	top: 7rem;
+}
+.ban-neiron1 img,.ban-neiron4 img{
+	width: 16rem;
+	height: auto;
+}
+.ban-neiron1{
+	left: 0.5rem;
+}
+.ban-neiron4{
+	right: 0.5rem;
+}
+.ban-neiron2,.ban-neiron3{
+	width: 12rem;
+	height: 14.5rem;
+	position: absolute;
+	top: 7rem;
+}
+.ban-neiron2 img,.ban-neiron3 img{
+	width: 12rem;
+	height: auto;
+}
+.ban-neiron2{
+	background-color: #fff;
+	left: 17.5rem;
+}
+.ban-neiron3{
+	background-color:#fff;
+	right: 17.5rem;
+}
+.ban-neiron5{
+	width: 26rem;
+	height: 9rem;
+	
+	position: absolute;
+	top: 22rem;
+	left: 17rem;
+}					/*==视频==*/
+video{
+	width: 60rem;
+	height: 35rem;
+}
+					/*==视频==*/
+					/*==按钮按键样式==*/
+.ban-btn{
+	position: absolute;
+	text-align: center;
+	line-height:2.5rem;
+	border-radius: 0.75rem;
+	margin-left: 4rem;
+	bottom: 5rem;
+	color: #fff;
+	width: 8rem;
+	height: 2.5rem;
+	font-size: 1rem;
+	background-color: #b0c4de;
+}
+#ban-btn2{
+	margin-left:2rem;
+}
+#ban-btn3{
+	margin-left: 2rem;
+}
+#ban-btn5{
+	margin-left: 8.5rem;
+}
+.ban-text{
+	color: #808080;
+	position: absolute;
+	bottom: 1rem;
+	margin-right: 0.25rem;
+	margin-left: 0.25rem;
+	text-align: center;
+}
+.shipin{
+	margin: auto;
+	width: 60rem;
+	height: 35rem;
+	position: relative;
+}
+.shipin video{
+	margin: auto;
+}
+					/*==百科容器==*/
+.anli{
+	width: 60rem;
+	height:67.5rem;
+	margin: auto;
+	font-size: 0.8rem;
+	position: relative;
+}
+.anli-neiron1{
+	width: 40rem;
+	height:62.5rem;
+	position: absolute;
+	left: 0;
+	margin-top: 5rem;
+}
+.anli-neiron1 img{
+	width: 40rem;
+	height: 20rem;
+	margin-bottom: 1rem;
+}
+.anli-img-text{
+	position: relative;
+}
+.anli-text1 {
+	position: absolute;
+	width: 38.25rem;
+	height: 3rem;
+	font-size: 1.1rem;
+	color: #fff;
+	bottom: 1.1rem;
+	padding-left: 1.75rem;
+	line-height: 3rem;
+	background-color:rgba(0, 0, 0, 0.5);
+}
+.anli-neironz{
+	width: 18.5rem;
+	height:62.5rem;
+	position: absolute;
+	margin-top: 5rem;
+	right: 0;
+}
+.anli-neiron2{
+	width: 18.5rem;
+	height: 59rem;
+	background-color:#CDE0EF;
+	position: absolute;
+}
+.paomadeng{
+	width: 17rem;
+	height: 22.5rem;
+	margin:3.5rem 0.5rem 0.5rem 0.5rem;
+	
+}
+.gun-neiron{
+	width: 17rem;
+	height: 16rem;
+	margin: 0.5rem;
+	position: relative;
+}
+.gun-neiron img {
+	width: 17rem;
+	height: auto;
+}
+.heiti{
+	font-weight: 900;
+}
+.gun-txet2{
+	color: #B9BADE;
+}
+.gun-text3{
+	position: absolute;
+	right: 0;
+	bottom: 2rem;
+}
+.gengduo{
+	width: 18.5rem;
+	height: 2.5rem;
+	background-color: #CDE0EF;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+	line-height:2.5rem;
+}					/*==联系平台==*/
+.lianxi{
+	width: 60rem;
+	height: 20rem;
+	margin: auto;
+	font-size: 0.8rem;
+	position:relative;
+}
+.lianxi-anniu li{
+	border-radius: 1rem;
+	width: 5rem;
+	height:2rem;
+	font-size: 1rem;
+	background-color: #0065B3;
+	text-align: center;
+	line-height: 2rem;
+	margin-top: 1rem;
+	margin-left:1rem;
+}
+.lianxi-anniu{
+	position: absolute;
+	margin-top: 5rem;
+}
+#lichen{
+	background: #CDE0EF;
+}
+#jianchi{
+	background: #CDE0EF;
+}
+.lianxi-text{
+	margin-left: 10rem;
+	width: 40rem;
+	height: 7.5rem;
+	position: absolute;
+	margin-top: 6rem;
+	text-align: left;
+}
+.lianxi-text1{
+	display: block;
+}
+.lianxi-text2{
+	display: none;
+}
+.lianxi-text3{
+	display: none;
+}
+.lianxi-title{
+	font-size: 1rem;
+	color: #808080;
+}
+.lianxi-t{
+	color: #808080;
+	margin-left: 1.5rem;
+	margin-top: 0.5rem;
+}

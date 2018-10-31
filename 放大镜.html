@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>放大</title>
+	<link rel="stylesheet" type="text/css" href="css/fangda.css">
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div id="yuantu">
+	<img src="images/images-fangda/fdj1.jpg" width="100%"
+	height="100%">
+	<div id="liulang"></div>
+</div>
+<div id="big"><img src="images/images-fangda/fdj1.jpg" id="bigPic" style="position:absolute"></div>
+<div>
+	<ul id="xuan">
+		<li><img src="images/images-fangda/fdj1.jpg" width="100%"></li>
+		<li><img src="images/images-fangda/fdj2.jpg" width="100%"></li>
+		<li><img src="images/images-fangda/fdj3.jpg" width="100%"></li>
+		<li><img src="images/images-fangda/fdj4.jpg" width="100%"></li>
+		<li><img src="images/images-fangda/fdj5.jpg" width="100%"></li>
+	</ul>
+</div>
+</div>
+<script>
+	$('#yuantu').mousemove(function(e){
+	$('#big').show();
+	$('#liulang').show();
+	/*==获取放大镜左上边框离原图左上边框距离==*/
+	var lx = e.pageX;
+	var ly = e.pageY;
+	var yl = $('#yuantu').offset().left;
+	var yt = $('#yuantu').offset().top;
+	var lw = $('#liulang').width()/2;
+	var lh = $('#liulang').height()/2;
+	var newLeft = lx-yl-lw;
+	var newTop = ly-yt-lh;
+/*==获取放大镜左上边框离原图左上边框距离==*/
+/*==控制放大镜不超出原图容器==*/
+	var minleft = 0;
+    var maxleft = $('#yuantu').width() - $('#liulang').width();
+    var mintop = 0;
+    var maxtop = $('#yuantu').height() - $('#liulang').height();
+
+    if (newLeft < minleft) {
+        newLeft = 0;
+    }
+
+    if (newLeft > maxleft) {
+        newLeft = maxleft;
+    }
+
+    if (newTop < mintop) {
+        newTop = 0;
+    }
+
+    if (newTop > maxtop) {
+        newTop = maxtop;
+    }
+    /*==控制放大镜不超出原图容器==*/
+     /*==控制大图按照比例反向移动==*/
+    $('#liulang').css('left', newLeft + 'px').css('top', newTop + 'px');
+    var yw = $('#yuantu').width();
+    var yh = $('#yuantu').height();
+    var bw = $('#bigPic').width();
+    var bh = $('#bigPic').height();
+    var x = bw*newLeft/yw;
+    var y = bh*newTop/yh;
+    $('#bigPic').css('left', -x + 'px');
+    $('#bigPic').css('top', -y + 'px');
+})
+/*==控制大图按照比例反向移动==*/
+/*隐藏放大镜和大图*/
+$('#yuantu').mouseout(function() {
+    $('#liulang').hide();
+    $('#big').hide();
+})
+
+$('#xuan img').click(function() {
+        var s = $(this).attr('src');
+        // 赋值给大图和原图中的图片
+        $('#bigPic').attr('src', s);
+        $('#yuantu img').attr('src', s);
+
+    })
+</script>
+</body>
+</html>

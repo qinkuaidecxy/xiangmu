@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+   
+	<link rel="stylesheet" type="text/css" href="css/wangye.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+ <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+ <script>
+ 	window.onload = function() {
+    var galleryTop = new Swiper('#gallery', {
+    	
+    });
+}
+
+  </script>
+ <script>
+$(document).ready(function(){
+    /* 右侧选项卡*/
+   $("#zx").on("mouseover mouseout",function(){
+    $("#zixun-x").toggle();
+    $("#zixun").toggle();
+  });
+   $("#dianhua").on("mouseover mouseout",function(){
+    $(".dianhua2").toggle();
+    $("#dianhua-x").toggle();
+    $("#dianhua1").toggle();
+  });
+   $("#erweima").on("mouseover mouseout",function(){
+    $(".erweima2").toggle();
+    $("#weixin-x").toggle();
+    $("#weixin").toggle();
+  }); /*排版按钮*/
+   /*底部按钮*/
+	$("#jieshao").on("click",function(){
+    $(".lianxi-text1").show();
+    $(".lianxi-text2").hide();
+    $(".lianxi-text3").hide();
+    $("#jieshao").css("background-color","#0065B3");
+    $("#lichen").css("background-color","#CDE0EF");
+    $("#jianchi").css("background-color","#CDE0EF");
+  });
+	$("#lichen").on("click",function(){
+    $(".lianxi-text2").show();
+    $(".lianxi-text1").hide();
+    $(".lianxi-text3").hide();
+    $("#jieshao").css("background-color","#CDE0EF");
+    $("#lichen").css("background-color","#0065B3");
+    $("#jianchi").css("background-color","#CDE0EF");
+  });
+	$("#jianchi").on("click",function(){
+    $(".lianxi-text3").show();
+    $(".lianxi-text2").hide();
+    $(".lianxi-text1").hide();
+    $("#jieshao").css("background-color","#CDE0EF");
+    $("#lichen").css("background-color","#CDE0EF");
+    $("#jianchi").css("background-color","#0065B3");
+  });
+});
+</script>
+	<title>wangye</title>
+</head>
+<body><!--导航栏-->
+<div class="daohanlang">
+<img src="images/images-wangye/logo.png" class="img1">
+	<ul class="daohananniu">
+		<li><a href="#i1" id="shouye">首页</a></li>
+		<li><a href="#i2" id="baike">心理百科</a></li>
+		<li><a href="#i3" id="zhuanjia">专家信息</a></li>
+		<li><a href="#i4" id="anlifx">案例分析</a></li>
+		<li><a href="#i5" id="guanyu">关于我们</a></li>
+	</ul>
+</div>
+<a id="i1" name="i1"></a>
+<div class="kongbai">
+</div>
+<!--轮播图-->
+<div id="scrollPics">
+        <ul class="slider">
+            <li><img src="images/images-wangye/1.jpg" /></li>
+            <li><img src="images/images-wangye/2.jpg" /></li>
+            <li><img src="images/images-wangye/3.jpg" /></li>
+            <li><img src="images/images-wangye/4.jpg" /></li>
+        </ul>
+
+        <ul class="num"></ul>
+    </div><!--选项卡-->
+    <div class="xuan">
+    	<ul>
+    		<li><a href="#" id="zx"><img id="zixun-x" src="images/images-wangye/zixun-x.png"><img id="zixun" src="images/images-wangye/zixun.jpg"></a></li>
+
+    		<li><a href="#" id="erweima"><img id="weixin-x" src="images/images-wangye/weixin-x.png"><img id="weixin" src="images/images-wangye/weixin.jpg"></a>
+    		<ul>
+    			<li><div class="erweima2"><img src="images/images-wangye/erweima.jpg"><div class="erweima-font">扫一扫了解一下</div></div></li>
+    		</ul>
+    		</li>
+
+    		<li><a href="#" id="dianhua">
+            <img id="dianhua-x" src="images/images-wangye/dianhua-x.png"><img id="dianhua1" src="images/images-wangye/dianhua.jpg"></a>
+    		<ul>
+    			<li><div class="dianhua2"><h3>4000-000-000</h3><img src="images/images-wangye/dianhua2.jpg"></div></li>
+    		</ul>
+    		</li>
+    	</ul>
+    </div>
+    <!--过度-->
+    <div class="guodu">
+    <label class="guodu-label">
+    我们已经为
+    	<span>1</span><span>2</span><span>3</span><span>0</span><span>9</span><span>1</span>
+    用户解决问题
+    </label>
+    </div>
+    <!--版-->
+    <div class="ban">
+    <a id="i2" name="i2"></a>
+    	<div class="toubu">
+    	<div class="toubu-neiron">
+    		<img src="images/images-wangye/toubu1.png">
+    		<span class="title1">心理百科</span>
+    		<img src="images/images-wangye/toubu2.png"><br>
+    		<span class="title2">了解自己从这里开始</span>
+    	</div>
+    	</div>
+    		<div class="ban-neiron1">
+    			<img src="images/images-wangye/neiron1.jpg">
+    			<div class="ban-btn">趣味心理</div>
+    			<div class="ban-text">通过生动有趣的寓言故事、充满智慧的名人轶事以及鲜活的生活案例呈现给大家，以满足大家对心理学知识的渴求</div>
+    		</div>
+
+    		<div class="ban-neiron2">
+    			<img src="images/images-wangye/neiron2.jpg">
+    			<div id="ban-btn2" class="ban-btn">人格与性格</div>
+    			<div class="ban-text">带你了解行为背后隐藏的心理活动,以及个性、脾气等</div>
+    		</div>
+
+    		<div class="ban-neiron3">
+    			<img src="images/images-wangye/neiron3.jpg">
+    			<div id="ban-btn3" class="ban-btn">情绪调节</div>
+    			<div class="ban-text">学会如何调节情绪，避开情绪怪圈，做情绪的主人!</div>
+    		</div>
+
+    		<div class="ban-neiron4">
+    			<img src="images/images-wangye/neiron4.jpg">
+    			<div class="ban-btn">冷门小知识</div>
+    			<div class="ban-text">不觉进入一个异彩纷呈的别样世界，备感新鲜好玩，既增长见识，又开阔视野，兼具益智、解颐之功效。</div>
+    		</div>
+
+    		<div class="ban-neiron5" >
+    			<img src="images/images-wangye/neiron5.jpg"/ style="width: 26rem;height: 9rem;">
+            <div id="ban-btn5" class="ban-btn">嘿嘿嘿</div>
+    			<div class="ban-text"></div>
+    		</div>
+    </div>
+    					<!--视频-->
+	<div class="shipin">
+	<a name="shipin-biaoqian"></a>
+		<video  controls>
+  		<source src="images/images-wangye/shipin.mp4" type="video/mp4">
+  		</video>
+	</div><a id="i3" name="i3"></a>        
+                    <!--滑动翻页-->
+        <div class="zhuanjia">
+        <div class="toubu">
+    	<div class="toubu-neiron">
+    		<img src="images/images-wangye/toubu1.png">
+    		<span class="title1">心理百科</span>
+    		<img src="images/images-wangye/toubu2.png"><br>
+    		<span class="title2">了解自己从这里开始</span>
+    	</div>
+    	</div>
+    <div class="swiper-container" id="gallery">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+			<div class="top_img">
+			                  	<img class="timg " src="images/images-wangye/1h.jpg"  />
+			                  	<label>谢颖灵</label>
+			                 <p class="topp">
+			                 	<img class="btnimg" src="images/images-wangye/btn1.png" />国家二级心理咨询师<br />
+								高校心理讲师<br />
+								大学生心理辅导专业委员会<br />
+								沙盘游戏治疗师<br />
+								国家心理咨询师职业资格鉴定导师<br />
+								中科院心理所学习效能首席培训师<br/>
+								<br/>
+								<br/>
+			                 	<img class="btnimg" src="images/images-wangye/btn2.png" />擅长专业<br/>
+			                	摆脱单身，回避亲密关系，恋人矛盾，感情淡漠，父母反对，异地<br/>
+			                 	恋，前任危机，恋人劈腿，失恋创伤修复，情感挽回等</p>
+			                 	<div class="topp1">毕业于北京大学心理学系，具有二十年心理咨询和团体心理辅导经验。EAP课程培训，心
+			                 		<br/>理咨询师认证辅导，教练技术和心理危机干预。
+			                 	</div>
+			 </div>
+		</div>
+		<div class="swiper-slide">
+		<div class="top_img">
+			                  	<img class="timg " src="images/images-wangye/2h.jpg"  />
+			                  	<label>胡云</label>
+			                 <p class="topp">
+			                 	<img class="btnimg" src="images/images-wangye/btn1.png" />
+								首届中美督导师连续培训项目成员<br />
+								北京高教学会心理咨询研究会理事<br />
+								德阳心理援助站志愿者<br />
+								中国科学院心理研究所应用心理学硕士
+								<br/>
+								<br/>
+			                 	<img class="btnimg" src="images/images-wangye/btn2.png" />擅长专业<br/>
+			                	抑郁缓解、焦虑排除、睡眠改善、压力释放矛盾,危机化解等</p>
+			                 	<div class="topp1">从事咨询行业5年，擅长分析研究原生家庭及人格依恋类型分析，同时善长研究<br/>
+			                 		和运用催眠，焦点解决，认知形为疗法等心理学技术、矛盾危机化解等问题<br/>
+			                 		，用心聆听来访者的心声，启发内心渴望蜕变的自己，做到陪伴，接纳，耐心，积极探索。
+			                 	</div>
+		</div>
+		</div>
+		<div class="swiper-slide">
+		<div class="top_img">
+			                  	<img class="timg " src="images/images-wangye/3h.jpg"  />
+			                  	<label>李昕夏</label>
+			                 <p class="topp">
+			                 	<img class="btnimg" src="images/images-wangye/btn1.png" />
+								国家二级心理咨询师<br />
+								中挪精神分析连续培训项目学员<br />
+								美国纽约理工学院硕士<br />
+								北京师范大学心理学院心理咨询中心等兼职心理咨询师
+								<br/>
+								<br/>
+			                 	<img class="btnimg" src="images/images-wangye/btn2.png" />擅长专业<br/>
+			                	焦虑，抑郁，孤独，强迫，考前压力，恐惧等长期的情绪困扰</p>
+			                 	<div class="topp1">从事心理健康教育行业多年，拥有12年咨询经验。能够精准快速地分析心理问题，深度解剖行<br/>
+			                 		为下面的深层动机.
+			                 	</div>
+			 </div>
+		</div>
+		<div class="swiper-slide">
+		
+		<div class="top_img">
+			                  	<img class="timg " src="images/images-wangye/4h.jpg" />
+			                  	<label>刘毅</label>
+			                 <p class="topp">
+			                 	<img class="btnimg" src="images/images-wangye/btn1.png" />
+								清华大学临床与咨询心理学博士生<br />
+								国家三级心理咨询师<br />
+								TLTA时间线治疗师<br />
+								北京交通大学学生心理素质教育中心实习团体治疗师
+								<br/>
+								<br/>
+			                 	<img class="btnimg" src="images/images-wangye/btn2.png" />擅长专业<br/>
+			                	职业生涯规划、职场人际关系、职场发展和定位</p>
+			                 	<div class="topp1">专注指导高校大学生职业规划多年，拥有丰富的咨询体验，强大的共情能力。善于从多角度全面分析问<br/>
+										题，和捕捉情绪，找出源头问题，运用用同理的方式带来访者找到问题，发现潜意识需求，擅长情绪管<br/>
+										理和自我提升，能够为不同的情感问题，制定出切实可行的，和个人成长方面有自己独特的方法和见解。
+			                 	</div>
+			 </div>
+		</div>
+		<div class="swiper-slide">
+		<div class="top_img">
+			                  	<img class="timg " src="images/images-wangye/5h.jpg" />
+			                  	<label>庞丽梅</label>
+			                 <p class="topp">
+			                 	<img class="btnimg" src="images/images-wangye/btn1.png" />
+								国家二级心理咨询师<br />
+								国家一级人力资源管理师<br />
+								美国PET父母效能训练讲师<br />
+								广州红房子公益社工机构高级顾问<br />
+								广州电台“有心人”栏目特约心理咨询嘉宾
+								<br/>
+								<br/>
+			                 	<img class="btnimg" src="images/images-wangye/btn2.png" />擅长专业<br/>
+			                	职业生涯规划、职场人际关系、职场发展和定位</p>
+			                 	<div class="topp1">从事心理与青少年心理问题咨询行业10年，8年外企EAP高级咨询顾问经历，超2000小时个案咨询经验。<br/>
+										擅长运用精神分析、认知行为疗法、原生家庭分析、短期焦点疗法帮助来访者解决问题，咨询风格细腻<br/>
+										温暖、循循善诱，能快速帮助来访者根本问题。老师还热心公益，被聘请为广州红房子公益社工机构高<br/>
+										级顾问多年，为公益做出不少贡献。
+			                 	</div>
+			 </div>
+		</div>
+		<div class="swiper-slide">
+		
+		<div class="top_img">
+			                  	<img class="timg " src="images/images-wangye/6h.jpg" />
+			                  	<label>于海波</label>
+			                 <p class="topp">
+			                 	<img class="btnimg" src="images/images-wangye/btn1.png" />
+								国家中级体验式培训师<br />
+								国家三级心理咨询师<br />
+								萨提亚家庭治疗师<br />
+								EAP高级咨询师
+								<br/>
+								<br/>
+			                 	<img class="btnimg" src="images/images-wangye/btn2.png" />擅长专业<br/>
+			                	职场压力，人际关系、自我提升、长期关系维护</p>
+			                 	<div class="topp1">心理学科班出身，专注于心理咨询行业6年，咨询案例超500例，擅长通过理论结合实践的方式，动态<br/>
+										指导来访者改善人际关系，能以独特、睿智、理性的方法启发式教学，帮助来访者解决人际矛盾，经营<br/>
+										顺心的职场生活。
+			                 	</div>
+			 </div>
+		</div>
+	</div>
+</div>
+</div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- 如果需要导航按钮 -->
+    <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>
+<a id="i4" name="i4"></a>
+					<!--案例分析-->
+	<div class="anli">
+		<div class="toubu">
+    	<div class="toubu-neiron">
+    		<img src="images/images-wangye/toubu1.png">
+    		<span class="title1">案例分析</span>
+    		<img src="images/images-wangye/toubu2.png"><br>
+    		<span class="title2">真实案例，用户反馈</span>
+    	</div>
+    	</div>
+    	<div class="anli-neiron1">
+    		<div class="anli-img-text">
+    		<a href="">
+    		<img src="images/images-wangye/anli1.jpg">
+    		<div class="anli-text1">
+    			职业规划：如何做职业选择题？
+    		</div>
+    		</a>
+    		</div>
+    		<div class="anli-img-text">
+    		<a href="">
+    		<img src="images/images-wangye/anli2.jpg">
+    		<div class="anli-text1">
+    			人际关系不良：与舍友不合群怎么办？
+    		</div>
+    		</a>
+    		</div>
+    		<div class="anli-img-text">
+    		<a href="">
+    		<img src="images/images-wangye/anli3.jpg">
+    		<div class="anli-text1">
+    			被搁浅的航船 -- 大学新生适应不良
+    		</div>
+    		</a>
+    		</div>
+    	</div>
+    	<div class="anli-neironz">
+    	<div class="anli-neiron2">
+    	<div class="paomadeng"> <img src="images/images-wangye/fengjing-1.jpg"/ style="width: 16rem;height: 20rem;margin-left: 0.5rem;"></div>
+    	<div class="gun-neiron">
+    		<img src="images/images-wangye/gun-neiron1.jpg">
+    		<div class="heiti">情绪压力--社交恐惧症</div>
+    		<div class="gun-text2">分辩成长中的负性、非理性思维、内向，过份关注内心...</div>
+    		<div class="gun-text3">了解详情></div>
+    	</div>
+    	<div class="gun-neiron">
+    		<img src="images/images-wangye/gun-neiron2.jpg">
+    		<div class="heiti">表白遭拒绝怎么办？</div>
+    		<div class="gun-text2">多次表白被拒。因为她拒绝过我，我就有种低价值感…</div>
+    		<div class="gun-text3">了解详情></div>
+    	</div>
+    	</div>
+    	<div class="gengduo">更多案例</div>
+	</div>
+	</div>	<a id="i5" name="i5"></a>		<!--关于我们-->
+	<div class="lianxi">
+	<div class="toubu">
+    	<div class="toubu-neiron">
+    		<img src="images/images-wangye/toubu1.png">
+    		<span class="title1">关于我们</span>
+    		<img src="images/images-wangye/toubu2.png"><br>
+    		<span class="title2">高校心理在线咨询</span>
+    	</div>
+    </div>
+    <ul class="lianxi-anniu">
+    	<li id="jieshao">平台介绍</li>
+    	<li id="lichen">网络历程</li>
+    	<li id="jianchi">坚持理念</li>
+    </ul>
+    <div class="lianxi-text1">
+    <div class="lianxi-text">
+    	<ul>
+    		<li class="lianxi-title">知心平台介绍</li>
+    		<li class="lianxi-t"><p>
+    			知心阳光，温暖心灵。携手知心，每天好心情<br>
+				网站主要面向高校大学生和高校心理健康教育工作者,旨在为高校大学生创造一个健康向上的精神驿站。为高校 心理健康教育工作者提供一个资源共享的场所。以达到优化大学生心理素质、维护大学生心理健康、丰富大学 生课余生活的目的网站以"为了一切学生的心理健康,一切为了学生的心理健康"为宗旨,力争打造国内一流的心 理学网站,为我国的大学生心理健康教育事业做出贡献。
+				</p>
+    		</li>
+    	</ul>
+    </div>
+    </div>
+    <div class="lianxi-text2">
+    <div class="lianxi-text">
+    	<ul>
+    		<li class="lianxi-title">品牌历程</li>
+    		<li class="lianxi-t"><p>
+    			2012年3月 知心团队成立，旨在为高校大学生创造一个健康向上的精神驿站<br>
+				2012年7月 知心团队和大学人文社会科学学院、一流大学心理学院等多个科研学院建立长期合作。<br>
+				2013年3月 知心团队战略聚焦，专注于为用户提人际关系、长期关系维护、情绪情感压力、职业生涯规划技巧 提升等服务。不 同时还在北上广联合多个高校举办高峰论坛，受到了众多用户的推崇与关注。<br>
+				截止到2017年，知心已成功帮助5万余名用户解决心理问题，重新找回自己。</p>
+    		</li>
+    	</ul>
+    </div>
+    </div>
+    <div class="lianxi-text3">
+    <div class="lianxi-text">
+    	<ul>
+    		<li class="lianxi-title">坚持理念</li>
+    		<li class="lianxi-t"><p>
+    			知心使命、定位、理念
+				使命：帮助更多的用户高校大学生提供公益性的心理咨询<br>
+				定位：高校大学生活、学业、人际关系、职业规划等问题的咨询<br>
+				理念：为了一切学生的心理健康,一切为了学生的心理健康</p>
+    		</li>
+    	</ul>
+    </div>
+    </div>
+    </div>
+     <script src="js/swiper.min.js"></script>
+    <script src="js/lunbotu.js"></script>
+</body>
+</html>
